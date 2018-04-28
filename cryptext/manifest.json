@@ -1,0 +1,31 @@
+ {
+    "name": "Koinex Extensions",
+    "description" : "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 2,
+     "options_page": "options.html",
+     "browser_action": {
+      "default_popup": "index.html",
+      "default_icon": "koinex.png"
+    },
+    "background": {
+  "scripts": ["background.js"]
+},
+ "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F",
+          "mac": "MacCtrl+Shift+F"
+        },
+        "description": "Opens index.html"
+      }
+    },
+    "content_scripts": [
+  {
+    "matches": [
+      "https://koinex.in/"
+    ],
+    "js": ["jquery.js","content.js"]
+  }
+]
+  }
