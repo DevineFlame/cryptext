@@ -68,12 +68,12 @@ var settings = {
   "url": "https://onesignal.com/api/v1/notifications",
   "method": "POST",
   "headers": {
-    "authorization": "Basic MzUzY2UyOTYtZDQ3Ni00YTQ2LWE3ZDMtYjQ3ZTQ0N2UzZGIw",
+    "authorization": "Basic *******************************",
     "content-type": "application/json"
   },
   "android_group":true,
   "processData": false,
-  "data": " {\r\n  \"app_id\": \"e76da36d-2560-486b-933c-6f9367de652c\",\r\n  \"included_segments\": [\"All\"],\r\n  \"tag\": [\""+coin+"\"],\r\n  \"data\": {\"foo\": \""+coin+"\"},\r\n  \"android_group_message\":{\"en\": \"$[notif_count]\"},\r\n  \"contents\": {\"en\": \""+change+"\"}\r\n}"
+  "data": " {\r\n  \"app_id\": \"***************************************\",\r\n  \"included_segments\": [\"All\"],\r\n  \"tag\": [\""+coin+"\"],\r\n  \"data\": {\"foo\": \""+coin+"\"},\r\n  \"android_group_message\":{\"en\": \"$[notif_count]\"},\r\n  \"contents\": {\"en\": \""+change+"\"}\r\n}"
 }
 
 $.ajax(settings).done(function (response) {
